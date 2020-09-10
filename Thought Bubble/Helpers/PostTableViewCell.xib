@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="220" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="Thought_Bubble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="405" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgy-Lj-2SR">
+                        <rect key="frame" x="8" y="8" width="389" height="204"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a philosophical question. It can be long or short." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsm-FE-DX0">
+                                <rect key="frame" x="15" y="30" width="359" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10453 Votes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWS-B1-YEl">
+                                <rect key="frame" x="15" y="156" width="359" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMI-oN-8DD">
+                                <rect key="frame" x="75" y="113.5" width="115" height="37.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="MID-DX-Qq5"/>
+                                    <constraint firstAttribute="height" constant="37.5" id="rsI-Vo-D6b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <state key="normal" title="Agree"/>
+                                <connections>
+                                    <action selector="agreeTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nGO-3H-g2T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdH-EX-nKo">
+                                <rect key="frame" x="199" y="113.5" width="115" height="37.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37.5" id="Zmm-GA-QnG"/>
+                                    <constraint firstAttribute="width" constant="115" id="tBO-fx-9lt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <state key="normal" title="Disagree"/>
+                                <connections>
+                                    <action selector="disagreeTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bSj-PA-fKx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.16862745100000001" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XWS-B1-YEl" firstAttribute="leading" secondItem="hgy-Lj-2SR" secondAttribute="leading" constant="15" id="7EH-2H-tFo"/>
+                            <constraint firstAttribute="trailing" secondItem="Rsm-FE-DX0" secondAttribute="trailing" constant="15" id="7aq-bv-S89"/>
+                            <constraint firstItem="rMI-oN-8DD" firstAttribute="leading" secondItem="hgy-Lj-2SR" secondAttribute="leading" constant="75" id="AE1-TK-f4D"/>
+                            <constraint firstItem="XWS-B1-YEl" firstAttribute="top" secondItem="rMI-oN-8DD" secondAttribute="bottom" constant="5" id="D5B-cj-o3B"/>
+                            <constraint firstItem="Rsm-FE-DX0" firstAttribute="leading" secondItem="hgy-Lj-2SR" secondAttribute="leading" constant="15" id="LVA-4R-ptl"/>
+                            <constraint firstAttribute="bottom" secondItem="XWS-B1-YEl" secondAttribute="bottom" constant="30" id="R6f-Cq-fHZ"/>
+                            <constraint firstAttribute="trailing" secondItem="BdH-EX-nKo" secondAttribute="trailing" constant="75" id="UcO-gZ-2QP"/>
+                            <constraint firstItem="XWS-B1-YEl" firstAttribute="top" secondItem="BdH-EX-nKo" secondAttribute="bottom" constant="5" id="Ued-uH-qgJ"/>
+                            <constraint firstItem="Rsm-FE-DX0" firstAttribute="top" secondItem="hgy-Lj-2SR" secondAttribute="top" constant="30" id="Zpb-EZ-SVU"/>
+                            <constraint firstAttribute="trailing" secondItem="XWS-B1-YEl" secondAttribute="trailing" constant="15" id="mPX-g2-Hra"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="tintColor" red="0.0" green="0.16862745100000001" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="hgy-Lj-2SR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="VGl-Cm-WAC"/>
+                    <constraint firstAttribute="bottom" secondItem="hgy-Lj-2SR" secondAttribute="bottom" constant="8" id="bYd-uE-Qnj"/>
+                    <constraint firstItem="hgy-Lj-2SR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="nM4-0n-kgT"/>
+                    <constraint firstAttribute="trailing" secondItem="hgy-Lj-2SR" secondAttribute="trailing" constant="8" id="ttE-nv-j9i"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="agreeButton" destination="rMI-oN-8DD" id="UNk-qJ-tBj"/>
+                <outlet property="disagreeButton" destination="BdH-EX-nKo" id="l7a-nY-03T"/>
+                <outlet property="questionLabel" destination="Rsm-FE-DX0" id="Ig3-oy-jj4"/>
+                <outlet property="voteCountLabel" destination="XWS-B1-YEl" id="raP-9N-cTt"/>
+            </connections>
+            <point key="canvasLocation" x="119.56521739130436" y="139.95535714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
